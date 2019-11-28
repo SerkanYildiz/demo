@@ -179,8 +179,9 @@ class AppFixtures extends Fixture
         $phrases = $this->getPhrases();
         shuffle($phrases);
 
-        while (mb_strlen($text = implode('. ', $phrases).'.') > $maxLength) {
-            array_pop($phrases);
+        $text = '';
+        while (mb_strlen(implode('. ', $phrases).'.') > $maxLength) {
+            $text .= array_pop($phrases);
         }
 
         return $text;

@@ -46,7 +46,8 @@
         "symfony/phpunit-bridge": "*",
         "symfony/stopwatch": "*",
         "symfony/web-profiler-bundle": "*",
-        "symfony/web-server-bundle": "*"
+        "symfony/web-server-bundle": "*",
+        "vimeo/psalm": "^3.7"
     },
     "config": {
         "platform": {
